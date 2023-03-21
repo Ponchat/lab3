@@ -141,7 +141,7 @@ HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 		  	  {
 				  MotorDataDuty = (MotorSetduty-1);
 		  	  }
-			  if(MotorSetduty >= 100){
+			  else if(MotorSetduty >= 100){
 				  MotorSetduty = 100;
 			  }
 			  else if (MotorSetduty <= 0){
